@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<GDIShape xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>EarthGround</Name>
+  <OutPutPointType>NShape</OutPutPointType>
+  <XAxisGridMultiple>1</XAxisGridMultiple>
+  <YAxisGridMultiple>1</YAxisGridMultiple>
+  <DisplaySizeMultiple>14</DisplaySizeMultiple>
+  <PointSizeMultiple>1</PointSizeMultiple>
+  <ImageSizeMultiple>40</ImageSizeMultiple>
+  <Width>10</Width>
+  <Height>60</Height>
+  <FillColorStringName>SteelBlue</FillColorStringName>
+  <PenColorStringName>Black</PenColorStringName>
+  <PenWidth>1</PenWidth>
+  <Segments>
+    <GDIPathSegment xsi:type="Rectangle">
+      <SegmentType>Rectangle</SegmentType>
+      <StartFigure>false</StartFigure>
+      <CloseFigure>false</CloseFigure>
+      <GDIRectangleF>
+        <Location>
+          <X>-5</X>
+          <Y>30</Y>
+        </Location>
+        <Size>
+          <Width>10</Width>
+          <Height>60</Height>
+        </Size>
+        <X>-5</X>
+        <Y>30</Y>
+        <Width>10</Width>
+        <Height>60</Height>
+      </GDIRectangleF>
+      <X>-5</X>
+      <Y>30</Y>
+      <Width>10</Width>
+      <Height>60</Height>
+    </GDIPathSegment>
+  </Segments>
+</GDIShape>

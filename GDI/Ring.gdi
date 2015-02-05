@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<GDIShape xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Ring</Name>
+  <OutPutPointType>NShape</OutPutPointType>
+  <XAxisGridMultiple>1</XAxisGridMultiple>
+  <YAxisGridMultiple>1</YAxisGridMultiple>
+  <DisplaySizeMultiple>40</DisplaySizeMultiple>
+  <PointSizeMultiple>1</PointSizeMultiple>
+  <ImageSizeMultiple>40</ImageSizeMultiple>
+  <Width>9.4</Width>
+  <Height>17</Height>
+  <FillColorStringName>SteelBlue</FillColorStringName>
+  <PenColorStringName>Black</PenColorStringName>
+  <PenWidth>1</PenWidth>
+  <Segments>
+    <GDIPathSegment xsi:type="Lines">
+      <SegmentType>Lines</SegmentType>
+      <StartFigure>false</StartFigure>
+      <CloseFigure>false</CloseFigure>
+      <Points>
+        <PointF>
+          <X>-3.2</X>
+          <Y>-8.5</Y>
+        </PointF>
+        <PointF>
+          <X>-3.2</X>
+          <Y>-1.5</Y>
+        </PointF>
+      </Points>
+      <PointIndex>0</PointIndex>
+      <X>-3.2</X>
+      <Y>-8.5</Y>
+    </GDIPathSegment>
+    <GDIPathSegment xsi:type="Arc">
+      <SegmentType>Arc</SegmentType>
+      <StartFigure>false</StartFigure>
+      <CloseFigure>false</CloseFigure>
+      <X>-4.7</X>
+      <Y>8.5</Y>
+      <Width>9.4</Width>
+      <Height>9.4</Height>
+      <StartAngle>350</StartAngle>
+      <SweepAngle>200</SweepAngle>
+    </GDIPathSegment>
+    <GDIPathSegment xsi:type="Lines">
+      <SegmentType>Lines</SegmentType>
+      <StartFigure>false</StartFigure>
+      <CloseFigure>false</CloseFigure>
+      <Points>
+        <PointF>
+          <X>3.2</X>
+          <Y>-1.5</Y>
+        </PointF>
+        <PointF>
+          <X>3.2</X>
+          <Y>-8.5</Y>
+        </PointF>
+      </Points>
+      <PointIndex>1</PointIndex>
+      <X>3.2</X>
+      <Y>-8.5</Y>
+    </GDIPathSegment>
+    <GDIPathSegment xsi:type="Arc">
+      <SegmentType>Arc</SegmentType>
+      <StartFigure>true</StartFigure>
+      <CloseFigure>false</CloseFigure>
+      <X>-3.2</X>
+      <Y>7</Y>
+      <Width>6.4</Width>
+      <Height>6.4</Height>
+      <StartAngle>0</StartAngle>
+      <SweepAngle>360</SweepAngle>
+    </GDIPathSegment>
+  </Segments>
+</GDIShape>

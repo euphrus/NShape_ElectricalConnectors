@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<GDIShape xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>RF_TNC_Plug</Name>
+  <OutPutPointType>NShape</OutPutPointType>
+  <XAxisGridMultiple>1</XAxisGridMultiple>
+  <YAxisGridMultiple>1</YAxisGridMultiple>
+  <DisplaySizeMultiple>40</DisplaySizeMultiple>
+  <PointSizeMultiple>1</PointSizeMultiple>
+  <ImageSizeMultiple>40</ImageSizeMultiple>
+  <Width>13</Width>
+  <Height>13</Height>
+  <FillColorStringName>SteelBlue</FillColorStringName>
+  <PenColorStringName>Black</PenColorStringName>
+  <PenWidth>1</PenWidth>
+  <Segments>
+    <GDIPathSegment xsi:type="Arc">
+      <SegmentType>Arc</SegmentType>
+      <StartFigure>false</StartFigure>
+      <CloseFigure>false</CloseFigure>
+      <X>-6.5</X>
+      <Y>6.5</Y>
+      <Width>13</Width>
+      <Height>13</Height>
+      <StartAngle>0</StartAngle>
+      <SweepAngle>360</SweepAngle>
+    </GDIPathSegment>
+    <GDIPathSegment xsi:type="Arc">
+      <SegmentType>Arc</SegmentType>
+      <StartFigure>false</StartFigure>
+      <CloseFigure>false</CloseFigure>
+      <X>-5.59</X>
+      <Y>5.59</Y>
+      <Width>11.18</Width>
+      <Height>11.18</Height>
+      <StartAngle>0</StartAngle>
+      <SweepAngle>360</SweepAngle>
+    </GDIPathSegment>
+    <GDIPathSegment xsi:type="Arc">
+      <SegmentType>Arc</SegmentType>
+      <StartFigure>false</StartFigure>
+      <CloseFigure>false</CloseFigure>
+      <X>-5.59</X>
+      <Y>5.59</Y>
+      <Width>11.18</Width>
+      <Height>11.18</Height>
+      <StartAngle>0</StartAngle>
+      <SweepAngle>360</SweepAngle>
+    </GDIPathSegment>
+    <GDIPathSegment xsi:type="Arc">
+      <SegmentType>Arc</SegmentType>
+      <StartFigure>false</StartFigure>
+      <CloseFigure>false</CloseFigure>
+      <X>-4.03</X>
+      <Y>4.03</Y>
+      <Width>8.06</Width>
+      <Height>8.06</Height>
+      <StartAngle>0</StartAngle>
+      <SweepAngle>360</SweepAngle>
+    </GDIPathSegment>
+    <GDIPathSegment xsi:type="Arc">
+      <SegmentType>Arc</SegmentType>
+      <StartFigure>false</StartFigure>
+      <CloseFigure>false</CloseFigure>
+      <X>-4.03</X>
+      <Y>4.03</Y>
+      <Width>8.06</Width>
+      <Height>8.06</Height>
+      <StartAngle>0</StartAngle>
+      <SweepAngle>360</SweepAngle>
+    </GDIPathSegment>
+    <GDIPathSegment xsi:type="Arc">
+      <SegmentType>Arc</SegmentType>
+      <StartFigure>false</StartFigure>
+      <CloseFigure>false</CloseFigure>
+      <X>-4.03</X>
+      <Y>4.03</Y>
+      <Width>8.06</Width>
+      <Height>8.06</Height>
+      <StartAngle>0</StartAngle>
+      <SweepAngle>0</SweepAngle>
+    </GDIPathSegment>
+    <GDIPathSegment xsi:type="Arc">
+      <SegmentType>Arc</SegmentType>
+      <StartFigure>false</StartFigure>
+      <CloseFigure>false</CloseFigure>
+      <X>-2.415</X>
+      <Y>2.415</Y>
+      <Width>4.93</Width>
+      <Height>4.93</Height>
+      <StartAngle>0</StartAngle>
+      <SweepAngle>0</SweepAngle>
+    </GDIPathSegment>
+    <GDIPathSegment xsi:type="Arc">
+      <SegmentType>Arc</SegmentType>
+      <StartFigure>false</StartFigure>
+      <CloseFigure>false</CloseFigure>
+      <X>-2.415</X>
+      <Y>2.415</Y>
+      <Width>4.83</Width>
+      <Height>4.83</Height>
+      <StartAngle>0</StartAngle>
+      <SweepAngle>360</SweepAngle>
+    </GDIPathSegment>
+    <GDIPathSegment xsi:type="Arc">
+      <SegmentType>Arc</SegmentType>
+      <StartFigure>false</StartFigure>
+      <CloseFigure>false</CloseFigure>
+      <X>-0.66</X>
+      <Y>0.66</Y>
+      <Width>1.32</Width>
+      <Height>1.32</Height>
+      <StartAngle>0</StartAngle>
+      <SweepAngle>360</SweepAngle>
+    </GDIPathSegment>
+  </Segments>
+</GDIShape>
