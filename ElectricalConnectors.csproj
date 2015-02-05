@@ -137,6 +137,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="LICENSE" />
+    <None Include="README.md" />
     <None Include="Resources\EightP8C.bmp" />
   </ItemGroup>
   <ItemGroup>
