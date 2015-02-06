@@ -44,19 +44,19 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 			{
 				Path.Reset();
 				Path.Reset();
-				Path.AddRectangle(new RectangleF(-17.75F * Scale, 13.75F * -1 * Scale, 35.5F * Scale, 27.5F * Scale));
+				Path.AddRectangle(new RectangleF(-17.75F * Scale * _pixelToMmMultiple, 13.75F * -1 * Scale * _pixelToMmMultiple, 35.5F * Scale * _pixelToMmMultiple, 27.5F * Scale * _pixelToMmMultiple));
 				Path.StartFigure();
-				Path.AddArc(-14.5F * Scale, -7.5F * -1 * Scale, 3F * Scale, 3F * Scale, 90F, 90F);
-				Path.AddArc(-14.5F * Scale, 10.5F * -1 * Scale, 3F * Scale, 3F * Scale, 180F, 90F);
-				Path.AddArc(11.5F * Scale, 10.5F * -1 * Scale, 3F * Scale, 3F * Scale, 270F, 90F);
-				Path.AddArc(11.5F * Scale, -7.5F * -1 * Scale, 3F * Scale, 3F * Scale, 360F, 90F);
+				Path.AddArc(-14.5F * Scale * _pixelToMmMultiple, -7.5F * -1 * Scale * _pixelToMmMultiple, 3F * Scale * _pixelToMmMultiple, 3F * Scale * _pixelToMmMultiple, 90F, 90F);
+				Path.AddArc(-14.5F * Scale * _pixelToMmMultiple, 10.5F * -1 * Scale * _pixelToMmMultiple, 3F * Scale * _pixelToMmMultiple, 3F * Scale * _pixelToMmMultiple, 180F, 90F);
+				Path.AddArc(11.5F * Scale * _pixelToMmMultiple, 10.5F * -1 * Scale * _pixelToMmMultiple, 3F * Scale * _pixelToMmMultiple, 3F * Scale * _pixelToMmMultiple, 270F, 90F);
+				Path.AddArc(11.5F * Scale * _pixelToMmMultiple, -7.5F * -1 * Scale * _pixelToMmMultiple, 3F * Scale * _pixelToMmMultiple, 3F * Scale * _pixelToMmMultiple, 360F, 90F);
 				Path.CloseFigure();
-				Path.AddRectangle(new RectangleF(-9F * Scale, -3F * -1 * Scale, 5F * Scale, 2F * Scale));
-				Path.AddRectangle(new RectangleF(-8.15F * Scale, -3.5F * -1 * Scale, 3.3F * Scale, 1F * Scale));
-				Path.AddRectangle(new RectangleF(-3F * Scale, 5F * -1 * Scale, 6F * Scale, 2F * Scale));
-				Path.AddRectangle(new RectangleF(-2.15F * Scale, 4.5F * -1 * Scale, 4.3F * Scale, 1F * Scale));
-				Path.AddRectangle(new RectangleF(4F * Scale, -3F * -1 * Scale, 5F * Scale, 2F * Scale));
-				Path.AddRectangle(new RectangleF(4.85F * Scale, -3.5F * -1 * Scale, 3.3F * Scale, 1F * Scale));
+				Path.AddRectangle(new RectangleF(-9F * Scale * _pixelToMmMultiple, -3F * -1 * Scale * _pixelToMmMultiple, 5F * Scale * _pixelToMmMultiple, 2F * Scale * _pixelToMmMultiple));
+				Path.AddRectangle(new RectangleF(-8.15F * Scale * _pixelToMmMultiple, -3.5F * -1 * Scale * _pixelToMmMultiple, 3.3F * Scale * _pixelToMmMultiple, 1F * Scale * _pixelToMmMultiple));
+				Path.AddRectangle(new RectangleF(-3F * Scale * _pixelToMmMultiple, 5F * -1 * Scale * _pixelToMmMultiple, 6F * Scale * _pixelToMmMultiple, 2F * Scale * _pixelToMmMultiple));
+				Path.AddRectangle(new RectangleF(-2.15F * Scale * _pixelToMmMultiple, 4.5F * -1 * Scale * _pixelToMmMultiple, 4.3F * Scale * _pixelToMmMultiple, 1F * Scale * _pixelToMmMultiple));
+				Path.AddRectangle(new RectangleF(4F * Scale * _pixelToMmMultiple, -3F * -1 * Scale * _pixelToMmMultiple, 5F * Scale * _pixelToMmMultiple, 2F * Scale * _pixelToMmMultiple));
+				Path.AddRectangle(new RectangleF(4.85F * Scale * _pixelToMmMultiple, -3.5F * -1 * Scale * _pixelToMmMultiple, 3.3F * Scale * _pixelToMmMultiple, 1F * Scale * _pixelToMmMultiple));
 				return true;
 			}
 			return false;

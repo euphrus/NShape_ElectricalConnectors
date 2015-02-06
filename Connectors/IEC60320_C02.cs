@@ -44,18 +44,18 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 			{
 				Path.Reset();
 				Path.Reset();
-				Path.AddRectangle(new RectangleF(-9.5F * Scale, 6.75F * -1 * Scale, 19F * Scale, 13.5F * Scale));
+				Path.AddRectangle(new RectangleF(-9.5F * Scale * _pixelToMmMultiple, 6.75F * -1 * Scale * _pixelToMmMultiple, 19F * Scale * _pixelToMmMultiple, 13.5F * Scale * _pixelToMmMultiple));
 				Path.StartFigure();
-				Path.AddArc(-7.2F * Scale, 4.2F * -1 * Scale, 8.4F * Scale, 8.4F * Scale, 90F, 180F);
-				Path.AddArc(-1.2F * Scale, 4.2F * -1 * Scale, 8.4F * Scale, 8.4F * Scale, 270F, 180F);
+				Path.AddArc(-7.2F * Scale * _pixelToMmMultiple, 4.2F * -1 * Scale * _pixelToMmMultiple, 8.4F * Scale * _pixelToMmMultiple, 8.4F * Scale * _pixelToMmMultiple, 90F, 180F);
+				Path.AddArc(-1.2F * Scale * _pixelToMmMultiple, 4.2F * -1 * Scale * _pixelToMmMultiple, 8.4F * Scale * _pixelToMmMultiple, 8.4F * Scale * _pixelToMmMultiple, 270F, 180F);
 				Path.CloseFigure();
 				Path.StartFigure();
-				Path.AddArc(-7.2F * Scale, 4.2F * -1 * Scale, 8.4F * Scale, 8.4F * Scale, 90F, 180F);
-				Path.AddArc(-1.2F * Scale, 4.2F * -1 * Scale, 8.4F * Scale, 8.4F * Scale, 270F, 180F);
+				Path.AddArc(-7.2F * Scale * _pixelToMmMultiple, 4.2F * -1 * Scale * _pixelToMmMultiple, 8.4F * Scale * _pixelToMmMultiple, 8.4F * Scale * _pixelToMmMultiple, 90F, 180F);
+				Path.AddArc(-1.2F * Scale * _pixelToMmMultiple, 4.2F * -1 * Scale * _pixelToMmMultiple, 8.4F * Scale * _pixelToMmMultiple, 8.4F * Scale * _pixelToMmMultiple, 270F, 180F);
 				Path.StartFigure();
-				Path.AddArc(-4.55F * Scale, 1.25F * -1 * Scale, 2.5F * Scale, 2.5F * Scale, 180F, 360F);
+				Path.AddArc(-4.55F * Scale * _pixelToMmMultiple, 1.25F * -1 * Scale * _pixelToMmMultiple, 2.5F * Scale * _pixelToMmMultiple, 2.5F * Scale * _pixelToMmMultiple, 180F, 360F);
 				Path.StartFigure();
-				Path.AddArc(2.05F * Scale, 1.25F * -1 * Scale, 2.5F * Scale, 2.5F * Scale, 180F, 360F);
+				Path.AddArc(2.05F * Scale * _pixelToMmMultiple, 1.25F * -1 * Scale * _pixelToMmMultiple, 2.5F * Scale * _pixelToMmMultiple, 2.5F * Scale * _pixelToMmMultiple, 180F, 360F);
 				return true;
 			}
 			return false;

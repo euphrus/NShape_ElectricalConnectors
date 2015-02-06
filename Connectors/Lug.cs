@@ -44,11 +44,11 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 			{
 				Path.Reset();
 				Path.Reset();
-				Path.AddLines(new PointF[]{new PointF(-10F * Scale, -43.5F * -1 * Scale), new PointF(-10F * Scale, 0.5F * -1 * Scale), new PointF(-10F * Scale, 15F * -1 * Scale)});
-				Path.AddArc(-15F * Scale, 43.5F * -1 * Scale, 30F * Scale, 30F * Scale, 131.9F, 276.4F);
-				Path.AddLines(new PointF[]{new PointF(10F * Scale, 15F * -1 * Scale), new PointF(10F * Scale, 0.5F * -1 * Scale), new PointF(10F * Scale, -43.5F * -1 * Scale)});
+				Path.AddLines(new PointF[]{new PointF(-10F * Scale * _pixelToMmMultiple, -43.5F * -1 * Scale * _pixelToMmMultiple), new PointF(-10F * Scale * _pixelToMmMultiple, 0.5F * -1 * Scale * _pixelToMmMultiple), new PointF(-10F * Scale * _pixelToMmMultiple, 15F * -1 * Scale * _pixelToMmMultiple)});
+				Path.AddArc(-15F * Scale * _pixelToMmMultiple, 43.5F * -1 * Scale * _pixelToMmMultiple, 30F * Scale * _pixelToMmMultiple, 30F * Scale * _pixelToMmMultiple, 131.9F, 276.4F);
+				Path.AddLines(new PointF[]{new PointF(10F * Scale * _pixelToMmMultiple, 15F * -1 * Scale * _pixelToMmMultiple), new PointF(10F * Scale * _pixelToMmMultiple, 0.5F * -1 * Scale * _pixelToMmMultiple), new PointF(10F * Scale * _pixelToMmMultiple, -43.5F * -1 * Scale * _pixelToMmMultiple)});
 				Path.StartFigure();
-				Path.AddArc(-6.5F * Scale, 35F * -1 * Scale, 13F * Scale, 13F * Scale, 180F, 360F);
+				Path.AddArc(-6.5F * Scale * _pixelToMmMultiple, 35F * -1 * Scale * _pixelToMmMultiple, 13F * Scale * _pixelToMmMultiple, 13F * Scale * _pixelToMmMultiple, 180F, 360F);
 				return true;
 			}
 			return false;

@@ -44,13 +44,13 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 			{
 				Path.Reset();
 				Path.Reset();
-				Path.AddArc(-8.5F * Scale, 8.5F * -1 * Scale, 17F * Scale, 17F * Scale, 180F, 360F);
-				Path.AddArc(-8F * Scale, 8F * -1 * Scale, 16F * Scale, 16F * Scale, 180F, 360F);
-				Path.AddArc(-8F * Scale, 8F * -1 * Scale, 16F * Scale, 16F * Scale, 180F, 360F);
-				Path.AddArc(-4.69F * Scale, 4.69F * -1 * Scale, 9.38F * Scale, 9.38F * Scale, 180F, 360F);
-				Path.AddArc(-4.19F * Scale, 4.19F * -1 * Scale, 8.38F * Scale, 8.38F * Scale, 180F, 360F);
-				Path.AddArc(-4.19F * Scale, 4.19F * -1 * Scale, 8.38F * Scale, 8.38F * Scale, 180F, 360F);
-				Path.AddArc(-0.8F * Scale, 0.8F * -1 * Scale, 1.6F * Scale, 1.6F * Scale, 180F, 360F);
+				Path.AddArc(-8.5F * Scale * _pixelToMmMultiple, 8.5F * -1 * Scale * _pixelToMmMultiple, 17F * Scale * _pixelToMmMultiple, 17F * Scale * _pixelToMmMultiple, 180F, 360F);
+				Path.AddArc(-8F * Scale * _pixelToMmMultiple, 8F * -1 * Scale * _pixelToMmMultiple, 16F * Scale * _pixelToMmMultiple, 16F * Scale * _pixelToMmMultiple, 180F, 360F);
+				Path.AddArc(-8F * Scale * _pixelToMmMultiple, 8F * -1 * Scale * _pixelToMmMultiple, 16F * Scale * _pixelToMmMultiple, 16F * Scale * _pixelToMmMultiple, 180F, 360F);
+				Path.AddArc(-4.69F * Scale * _pixelToMmMultiple, 4.69F * -1 * Scale * _pixelToMmMultiple, 9.38F * Scale * _pixelToMmMultiple, 9.38F * Scale * _pixelToMmMultiple, 180F, 360F);
+				Path.AddArc(-4.19F * Scale * _pixelToMmMultiple, 4.19F * -1 * Scale * _pixelToMmMultiple, 8.38F * Scale * _pixelToMmMultiple, 8.38F * Scale * _pixelToMmMultiple, 180F, 360F);
+				Path.AddArc(-4.19F * Scale * _pixelToMmMultiple, 4.19F * -1 * Scale * _pixelToMmMultiple, 8.38F * Scale * _pixelToMmMultiple, 8.38F * Scale * _pixelToMmMultiple, 180F, 360F);
+				Path.AddArc(-0.8F * Scale * _pixelToMmMultiple, 0.8F * -1 * Scale * _pixelToMmMultiple, 1.6F * Scale * _pixelToMmMultiple, 1.6F * Scale * _pixelToMmMultiple, 180F, 360F);
 				return true;
 			}
 			return false;

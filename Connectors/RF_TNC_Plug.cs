@@ -44,15 +44,15 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 			{
 				Path.Reset();
 				Path.Reset();
-				Path.AddArc(-6.5F * Scale, 6.5F * -1 * Scale, 13F * Scale, 13F * Scale, 180F, 360F);
-				Path.AddArc(-5.59F * Scale, 5.59F * -1 * Scale, 11.18F * Scale, 11.18F * Scale, 180F, 360F);
-				Path.AddArc(-5.59F * Scale, 5.59F * -1 * Scale, 11.18F * Scale, 11.18F * Scale, 180F, 360F);
-				Path.AddArc(-4.03F * Scale, 4.03F * -1 * Scale, 8.06F * Scale, 8.06F * Scale, 180F, 360F);
-				Path.AddArc(-4.03F * Scale, 4.03F * -1 * Scale, 8.06F * Scale, 8.06F * Scale, 180F, 360F);
-				Path.AddArc(-4.03F * Scale, 4.03F * -1 * Scale, 8.06F * Scale, 8.06F * Scale, 180F, 0F);
-				Path.AddArc(-2.415F * Scale, 2.415F * -1 * Scale, 4.93F * Scale, 4.93F * Scale, 180F, 0F);
-				Path.AddArc(-2.415F * Scale, 2.415F * -1 * Scale, 4.83F * Scale, 4.83F * Scale, 180F, 360F);
-				Path.AddArc(-0.66F * Scale, 0.66F * -1 * Scale, 1.32F * Scale, 1.32F * Scale, 180F, 360F);
+				Path.AddArc(-6.5F * Scale * _pixelToMmMultiple, 6.5F * -1 * Scale * _pixelToMmMultiple, 13F * Scale * _pixelToMmMultiple, 13F * Scale * _pixelToMmMultiple, 180F, 360F);
+				Path.AddArc(-5.59F * Scale * _pixelToMmMultiple, 5.59F * -1 * Scale * _pixelToMmMultiple, 11.18F * Scale * _pixelToMmMultiple, 11.18F * Scale * _pixelToMmMultiple, 180F, 360F);
+				Path.AddArc(-5.59F * Scale * _pixelToMmMultiple, 5.59F * -1 * Scale * _pixelToMmMultiple, 11.18F * Scale * _pixelToMmMultiple, 11.18F * Scale * _pixelToMmMultiple, 180F, 360F);
+				Path.AddArc(-4.03F * Scale * _pixelToMmMultiple, 4.03F * -1 * Scale * _pixelToMmMultiple, 8.06F * Scale * _pixelToMmMultiple, 8.06F * Scale * _pixelToMmMultiple, 180F, 360F);
+				Path.AddArc(-4.03F * Scale * _pixelToMmMultiple, 4.03F * -1 * Scale * _pixelToMmMultiple, 8.06F * Scale * _pixelToMmMultiple, 8.06F * Scale * _pixelToMmMultiple, 180F, 360F);
+				Path.AddArc(-4.03F * Scale * _pixelToMmMultiple, 4.03F * -1 * Scale * _pixelToMmMultiple, 8.06F * Scale * _pixelToMmMultiple, 8.06F * Scale * _pixelToMmMultiple, 180F, 0F);
+				Path.AddArc(-2.415F * Scale * _pixelToMmMultiple, 2.415F * -1 * Scale * _pixelToMmMultiple, 4.93F * Scale * _pixelToMmMultiple, 4.93F * Scale * _pixelToMmMultiple, 180F, 0F);
+				Path.AddArc(-2.415F * Scale * _pixelToMmMultiple, 2.415F * -1 * Scale * _pixelToMmMultiple, 4.83F * Scale * _pixelToMmMultiple, 4.83F * Scale * _pixelToMmMultiple, 180F, 360F);
+				Path.AddArc(-0.66F * Scale * _pixelToMmMultiple, 0.66F * -1 * Scale * _pixelToMmMultiple, 1.32F * Scale * _pixelToMmMultiple, 1.32F * Scale * _pixelToMmMultiple, 180F, 360F);
 				return true;
 			}
 			return false;

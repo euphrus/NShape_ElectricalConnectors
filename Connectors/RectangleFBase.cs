@@ -14,6 +14,7 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 
 		private float _width;
 		private float _height;
+		protected const float _pixelToMmMultiple = 3.779528F;
 
 		#endregion Fields
 
@@ -55,12 +56,12 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 		{
 			get
 			{
-				return base.Width;
+				return _width * Scale * _pixelToMmMultiple;
 			}
 			set
 			{
 				_width = value;
-				base.Width = (int)Math.Ceiling(_width);
+				base.Width = (int)Math.Ceiling(_width * Scale * _pixelToMmMultiple);
 			}
 		}
 
@@ -69,12 +70,12 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 		{
 			get
 			{
-				return base.Height;
+				return _height * Scale * _pixelToMmMultiple;
 			}
 			set
 			{
 				_height = value;
-				base.Height = (int)Math.Ceiling(_height);
+				base.Height = (int)Math.Ceiling(_height * Scale * _pixelToMmMultiple);
 			}
 		}
 
@@ -92,8 +93,8 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 				if (value > 0)
 				{
 					_scale = value;
-					base.Width = (int)Math.Ceiling(_width * Scale);
-					base.Height = (int)Math.Ceiling(_height * Scale);
+					base.Width = (int)Math.Ceiling(_width * Scale * _pixelToMmMultiple);
+					base.Height = (int)Math.Ceiling(_height * Scale * _pixelToMmMultiple);
 				}
 			}
 		}

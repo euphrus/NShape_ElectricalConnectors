@@ -44,9 +44,9 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 			{
 				Path.Reset();
 				Path.Reset();
-				Path.AddArc(-15F * Scale, 15F * -1 * Scale, 30F * Scale, 30F * Scale, 180F, 360F);
-				Path.AddRectangle(new RectangleF(-7.874F * Scale, 3.302F * -1 * Scale, 1.524F * Scale, 6.604F * Scale));
-				Path.AddRectangle(new RectangleF(5.588F * Scale, 3.302F * -1 * Scale, 1.524F * Scale, 6.604F * Scale));
+				Path.AddArc(-15F * Scale * _pixelToMmMultiple, 15F * -1 * Scale * _pixelToMmMultiple, 30F * Scale * _pixelToMmMultiple, 30F * Scale * _pixelToMmMultiple, 180F, 360F);
+				Path.AddRectangle(new RectangleF(-7.874F * Scale * _pixelToMmMultiple, 3.302F * -1 * Scale * _pixelToMmMultiple, 1.524F * Scale * _pixelToMmMultiple, 6.604F * Scale * _pixelToMmMultiple));
+				Path.AddRectangle(new RectangleF(5.588F * Scale * _pixelToMmMultiple, 3.302F * -1 * Scale * _pixelToMmMultiple, 1.524F * Scale * _pixelToMmMultiple, 6.604F * Scale * _pixelToMmMultiple));
 				return true;
 			}
 			return false;

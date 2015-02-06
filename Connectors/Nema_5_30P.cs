@@ -44,13 +44,13 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 			{
 				Path.Reset();
 				Path.Reset();
-				Path.AddArc(-15F * Scale, 15F * -1 * Scale, 30F * Scale, 30F * Scale, 180F, 360F);
-				Path.AddRectangle(new RectangleF(5.588F * Scale, 0.005F * -1 * Scale, 1.524F * Scale, 6.604F * Scale));
-				Path.AddArc(-2.413F * Scale, 8.7122F * -1 * Scale, 4.826F * Scale, 4.826F * Scale, 180F, 360F);
-				Path.AddArc(-8.5F * Scale, -3F * -1 * Scale, 2F * Scale, 2F * Scale, 180F, 90F);
-				Path.AddLines(new PointF[]{new PointF(-3.5F * Scale, -3F * -1 * Scale), new PointF(-3.5F * Scale, -4.2F * -1 * Scale)});
-				Path.AddArc(-7.5F * Scale, -4.2F * -1 * Scale, 2F * Scale, 2F * Scale, 270F, -90F);
-				Path.AddLines(new PointF[]{new PointF(-7.5F * Scale, -8F * -1 * Scale), new PointF(-8.5F * Scale, -8F * -1 * Scale)});
+				Path.AddArc(-15F * Scale * _pixelToMmMultiple, 15F * -1 * Scale * _pixelToMmMultiple, 30F * Scale * _pixelToMmMultiple, 30F * Scale * _pixelToMmMultiple, 180F, 360F);
+				Path.AddRectangle(new RectangleF(5.588F * Scale * _pixelToMmMultiple, 0.005F * -1 * Scale * _pixelToMmMultiple, 1.524F * Scale * _pixelToMmMultiple, 6.604F * Scale * _pixelToMmMultiple));
+				Path.AddArc(-2.413F * Scale * _pixelToMmMultiple, 8.7122F * -1 * Scale * _pixelToMmMultiple, 4.826F * Scale * _pixelToMmMultiple, 4.826F * Scale * _pixelToMmMultiple, 180F, 360F);
+				Path.AddArc(-8.5F * Scale * _pixelToMmMultiple, -3F * -1 * Scale * _pixelToMmMultiple, 2F * Scale * _pixelToMmMultiple, 2F * Scale * _pixelToMmMultiple, 180F, 90F);
+				Path.AddLines(new PointF[]{new PointF(-3.5F * Scale * _pixelToMmMultiple, -3F * -1 * Scale * _pixelToMmMultiple), new PointF(-3.5F * Scale * _pixelToMmMultiple, -4.2F * -1 * Scale * _pixelToMmMultiple)});
+				Path.AddArc(-7.5F * Scale * _pixelToMmMultiple, -4.2F * -1 * Scale * _pixelToMmMultiple, 2F * Scale * _pixelToMmMultiple, 2F * Scale * _pixelToMmMultiple, 270F, -90F);
+				Path.AddLines(new PointF[]{new PointF(-7.5F * Scale * _pixelToMmMultiple, -8F * -1 * Scale * _pixelToMmMultiple), new PointF(-8.5F * Scale * _pixelToMmMultiple, -8F * -1 * Scale * _pixelToMmMultiple)});
 				Path.CloseFigure();
 				return true;
 			}

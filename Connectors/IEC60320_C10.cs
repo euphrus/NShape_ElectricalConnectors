@@ -44,43 +44,43 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 			{
 				Path.Reset();
 				Path.Reset();
-				Path.AddArc(-12.75F * Scale, 8.75F * -1 * Scale, 2.5F * Scale, 2.5F * Scale, 180F, 90F);
-				Path.AddArc(10.25F * Scale, 8.75F * -1 * Scale, 2.5F * Scale, 2.5F * Scale, 270F, 90F);
-				Path.AddArc(10.25F * Scale, -6.25F * -1 * Scale, 2.5F * Scale, 2.5F * Scale, 360F, 90F);
-				Path.AddArc(-12.75F * Scale, -6.25F * -1 * Scale, 2.5F * Scale, 2.5F * Scale, 90F, 90F);
+				Path.AddArc(-12.75F * Scale * _pixelToMmMultiple, 8.75F * -1 * Scale * _pixelToMmMultiple, 2.5F * Scale * _pixelToMmMultiple, 2.5F * Scale * _pixelToMmMultiple, 180F, 90F);
+				Path.AddArc(10.25F * Scale * _pixelToMmMultiple, 8.75F * -1 * Scale * _pixelToMmMultiple, 2.5F * Scale * _pixelToMmMultiple, 2.5F * Scale * _pixelToMmMultiple, 270F, 90F);
+				Path.AddArc(10.25F * Scale * _pixelToMmMultiple, -6.25F * -1 * Scale * _pixelToMmMultiple, 2.5F * Scale * _pixelToMmMultiple, 2.5F * Scale * _pixelToMmMultiple, 360F, 90F);
+				Path.AddArc(-12.75F * Scale * _pixelToMmMultiple, -6.25F * -1 * Scale * _pixelToMmMultiple, 2.5F * Scale * _pixelToMmMultiple, 2.5F * Scale * _pixelToMmMultiple, 90F, 90F);
 				Path.CloseFigure();
-				Path.AddArc(-10.5F * Scale, 6.5F * -1 * Scale, 2.5F * Scale, 2.5F * Scale, 180F, 90F);
-				Path.AddArc(8F * Scale, 6.5F * -1 * Scale, 2.5F * Scale, 2.5F * Scale, 270F, 90F);
-				Path.AddArc(8F * Scale, -4F * -1 * Scale, 2.5F * Scale, 2.5F * Scale, 360F, 90F);
-				Path.AddArc(-10.5F * Scale, -4F * -1 * Scale, 2.5F * Scale, 2.5F * Scale, 90F, 90F);
+				Path.AddArc(-10.5F * Scale * _pixelToMmMultiple, 6.5F * -1 * Scale * _pixelToMmMultiple, 2.5F * Scale * _pixelToMmMultiple, 2.5F * Scale * _pixelToMmMultiple, 180F, 90F);
+				Path.AddArc(8F * Scale * _pixelToMmMultiple, 6.5F * -1 * Scale * _pixelToMmMultiple, 2.5F * Scale * _pixelToMmMultiple, 2.5F * Scale * _pixelToMmMultiple, 270F, 90F);
+				Path.AddArc(8F * Scale * _pixelToMmMultiple, -4F * -1 * Scale * _pixelToMmMultiple, 2.5F * Scale * _pixelToMmMultiple, 2.5F * Scale * _pixelToMmMultiple, 360F, 90F);
+				Path.AddArc(-10.5F * Scale * _pixelToMmMultiple, -4F * -1 * Scale * _pixelToMmMultiple, 2.5F * Scale * _pixelToMmMultiple, 2.5F * Scale * _pixelToMmMultiple, 90F, 90F);
 				Path.CloseFigure();
 				Path.AddPolygon(new PointF[]
 				{
-					new PointF(-6F * Scale, -2F * -1 * Scale), 
-					new PointF(-6F * Scale, 2F * -1 * Scale), 
-					new PointF(-4F * Scale, 2F * -1 * Scale), 
-					new PointF(-4F * Scale, -2F * -1 * Scale)
+					new PointF(-6F * Scale * _pixelToMmMultiple, -2F * -1 * Scale * _pixelToMmMultiple), 
+					new PointF(-6F * Scale * _pixelToMmMultiple, 2F * -1 * Scale * _pixelToMmMultiple), 
+					new PointF(-4F * Scale * _pixelToMmMultiple, 2F * -1 * Scale * _pixelToMmMultiple), 
+					new PointF(-4F * Scale * _pixelToMmMultiple, -2F * -1 * Scale * _pixelToMmMultiple)
 				});
 				Path.AddPolygon(new PointF[]
 				{
-					new PointF(-5.5F * Scale, -1.65F * -1 * Scale), 
-					new PointF(-5.5F * Scale, 1.65F * -1 * Scale), 
-					new PointF(-4.5F * Scale, 1.65F * -1 * Scale), 
-					new PointF(-4.5F * Scale, -1.65F * -1 * Scale)
+					new PointF(-5.5F * Scale * _pixelToMmMultiple, -1.65F * -1 * Scale * _pixelToMmMultiple), 
+					new PointF(-5.5F * Scale * _pixelToMmMultiple, 1.65F * -1 * Scale * _pixelToMmMultiple), 
+					new PointF(-4.5F * Scale * _pixelToMmMultiple, 1.65F * -1 * Scale * _pixelToMmMultiple), 
+					new PointF(-4.5F * Scale * _pixelToMmMultiple, -1.65F * -1 * Scale * _pixelToMmMultiple)
 				});
 				Path.AddPolygon(new PointF[]
 				{
-					new PointF(6F * Scale, -2F * -1 * Scale), 
-					new PointF(4F * Scale, -2F * -1 * Scale), 
-					new PointF(4F * Scale, 2F * -1 * Scale), 
-					new PointF(6F * Scale, 2F * -1 * Scale)
+					new PointF(6F * Scale * _pixelToMmMultiple, -2F * -1 * Scale * _pixelToMmMultiple), 
+					new PointF(4F * Scale * _pixelToMmMultiple, -2F * -1 * Scale * _pixelToMmMultiple), 
+					new PointF(4F * Scale * _pixelToMmMultiple, 2F * -1 * Scale * _pixelToMmMultiple), 
+					new PointF(6F * Scale * _pixelToMmMultiple, 2F * -1 * Scale * _pixelToMmMultiple)
 				});
 				Path.AddPolygon(new PointF[]
 				{
-					new PointF(4.5F * Scale, -1.65F * -1 * Scale), 
-					new PointF(4.5F * Scale, 1.65F * -1 * Scale), 
-					new PointF(5.5F * Scale, 1.65F * -1 * Scale), 
-					new PointF(5.5F * Scale, -1.65F * -1 * Scale)
+					new PointF(4.5F * Scale * _pixelToMmMultiple, -1.65F * -1 * Scale * _pixelToMmMultiple), 
+					new PointF(4.5F * Scale * _pixelToMmMultiple, 1.65F * -1 * Scale * _pixelToMmMultiple), 
+					new PointF(5.5F * Scale * _pixelToMmMultiple, 1.65F * -1 * Scale * _pixelToMmMultiple), 
+					new PointF(5.5F * Scale * _pixelToMmMultiple, -1.65F * -1 * Scale * _pixelToMmMultiple)
 				});
 				return true;
 			}

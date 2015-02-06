@@ -46,17 +46,17 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 				Path.Reset();
 				Path.AddPolygon(new PointF[]
 				{
-					new PointF(4F * Scale, 0F * -1 * Scale), 
-					new PointF(2F * Scale, 3.464102F * -1 * Scale), 
-					new PointF(-2F * Scale, 3.464102F * -1 * Scale), 
-					new PointF(-4F * Scale, 4.90059E-16F * -1 * Scale), 
-					new PointF(-2F * Scale, -3.464102F * -1 * Scale), 
-					new PointF(2F * Scale, -3.464102F * -1 * Scale)
+					new PointF(4F * Scale * _pixelToMmMultiple, 0F * -1 * Scale * _pixelToMmMultiple), 
+					new PointF(2F * Scale * _pixelToMmMultiple, 3.464102F * -1 * Scale * _pixelToMmMultiple), 
+					new PointF(-2F * Scale * _pixelToMmMultiple, 3.464102F * -1 * Scale * _pixelToMmMultiple), 
+					new PointF(-4F * Scale * _pixelToMmMultiple, 4.90059E-16F * -1 * Scale * _pixelToMmMultiple), 
+					new PointF(-2F * Scale * _pixelToMmMultiple, -3.464102F * -1 * Scale * _pixelToMmMultiple), 
+					new PointF(2F * Scale * _pixelToMmMultiple, -3.464102F * -1 * Scale * _pixelToMmMultiple)
 				});
-				Path.AddArc(-3.5F * Scale, 3.5F * -1 * Scale, 7F * Scale, 7F * Scale, 180F, 360F);
-				Path.AddArc(-3.265F * Scale, 3.265F * -1 * Scale, 6.53F * Scale, 6.53F * Scale, 180F, 360F);
-				Path.AddArc(-3.265F * Scale, 3.265F * -1 * Scale, 6.53F * Scale, 6.53F * Scale, 180F, 360F);
-				Path.AddArc(-0.0255F * Scale, 0.0255F * -1 * Scale, 0.051F * Scale, 0.051F * Scale, 180F, 360F);
+				Path.AddArc(-3.5F * Scale * _pixelToMmMultiple, 3.5F * -1 * Scale * _pixelToMmMultiple, 7F * Scale * _pixelToMmMultiple, 7F * Scale * _pixelToMmMultiple, 180F, 360F);
+				Path.AddArc(-3.265F * Scale * _pixelToMmMultiple, 3.265F * -1 * Scale * _pixelToMmMultiple, 6.53F * Scale * _pixelToMmMultiple, 6.53F * Scale * _pixelToMmMultiple, 180F, 360F);
+				Path.AddArc(-3.265F * Scale * _pixelToMmMultiple, 3.265F * -1 * Scale * _pixelToMmMultiple, 6.53F * Scale * _pixelToMmMultiple, 6.53F * Scale * _pixelToMmMultiple, 180F, 360F);
+				Path.AddArc(-0.0255F * Scale * _pixelToMmMultiple, 0.0255F * -1 * Scale * _pixelToMmMultiple, 0.051F * Scale * _pixelToMmMultiple, 0.051F * Scale * _pixelToMmMultiple, 180F, 360F);
 				return true;
 			}
 			return false;

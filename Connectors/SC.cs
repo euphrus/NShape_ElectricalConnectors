@@ -46,35 +46,35 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 				Path.Reset();
 				Path.AddPolygon(new PointF[]
 				{
-					new PointF(-2.7F * Scale, -3.1F * -1 * Scale), 
-					new PointF(-2.7F * Scale, 1.7F * -1 * Scale), 
-					new PointF(-2.1F * Scale, 2.3F * -1 * Scale), 
-					new PointF(2.1F * Scale, 2.3F * -1 * Scale), 
-					new PointF(2.7F * Scale, 1.7F * -1 * Scale), 
-					new PointF(2.7F * Scale, -3.1F * -1 * Scale), 
-					new PointF(-2.7F * Scale, -3.1F * -1 * Scale)
+					new PointF(-2.7F * Scale * _pixelToMmMultiple, -3.1F * -1 * Scale * _pixelToMmMultiple), 
+					new PointF(-2.7F * Scale * _pixelToMmMultiple, 1.7F * -1 * Scale * _pixelToMmMultiple), 
+					new PointF(-2.1F * Scale * _pixelToMmMultiple, 2.3F * -1 * Scale * _pixelToMmMultiple), 
+					new PointF(2.1F * Scale * _pixelToMmMultiple, 2.3F * -1 * Scale * _pixelToMmMultiple), 
+					new PointF(2.7F * Scale * _pixelToMmMultiple, 1.7F * -1 * Scale * _pixelToMmMultiple), 
+					new PointF(2.7F * Scale * _pixelToMmMultiple, -3.1F * -1 * Scale * _pixelToMmMultiple), 
+					new PointF(-2.7F * Scale * _pixelToMmMultiple, -3.1F * -1 * Scale * _pixelToMmMultiple)
 				});
-				Path.AddRectangle(new RectangleF(-4.395F * Scale, 3.195F * -1 * Scale, 8.79F * Scale, 7.19F * Scale));
-				Path.AddRectangle(new RectangleF(-0.8F * Scale, 3.995F * -1 * Scale, 1.6F * Scale, 0.8F * Scale));
-				Path.AddRectangle(new RectangleF(-4.395F * Scale, 1.195F * -1 * Scale, 0.995F * Scale, 3.2F * Scale));
-				Path.AddRectangle(new RectangleF(3.4F * Scale, 1.195F * -1 * Scale, 0.995F * Scale, 3.2F * Scale));
-				Path.AddRectangle(new RectangleF(3.4F * Scale, 0.3499999F * -1 * Scale, 0.095F * Scale, 1.5F * Scale));
-				Path.AddRectangle(new RectangleF(-3.52F * Scale, 0.3499999F * -1 * Scale, 0.12F * Scale, 1.5F * Scale));
-				Path.AddRectangle(new RectangleF(3.6F * Scale, 3.2F * -1 * Scale, 0.8F * Scale, 2F * Scale));
-				Path.AddRectangle(new RectangleF(3.6F * Scale, 3.2F * -1 * Scale, 0.8F * Scale, 2F * Scale));
-				Path.AddRectangle(new RectangleF(-4.4F * Scale, 3.2F * -1 * Scale, 0.8F * Scale, 2F * Scale));
-				Path.AddRectangle(new RectangleF(-4.4F * Scale, 3.2F * -1 * Scale, 0.8F * Scale, 2F * Scale));
-				Path.AddRectangle(new RectangleF(-4.4F * Scale, -2F * -1 * Scale, 0.8F * Scale, 2F * Scale));
-				Path.AddRectangle(new RectangleF(-4.4F * Scale, -2F * -1 * Scale, 0.8F * Scale, 2F * Scale));
-				Path.AddRectangle(new RectangleF(3.6F * Scale, -2F * -1 * Scale, 0.8F * Scale, 2F * Scale));
-				Path.AddRectangle(new RectangleF(3.6F * Scale, -2F * -1 * Scale, 0.8F * Scale, 2F * Scale));
-				Path.AddRectangle(new RectangleF(-4.4F * Scale, 1.2F * -1 * Scale, 0.995F * Scale, 0.7F * Scale));
-				Path.AddRectangle(new RectangleF(3.4F * Scale, 1.2F * -1 * Scale, 0.995F * Scale, 0.7F * Scale));
-				Path.AddRectangle(new RectangleF(-4.4F * Scale, -1.3F * -1 * Scale, 0.995F * Scale, 0.7F * Scale));
-				Path.AddRectangle(new RectangleF(3.4F * Scale, -1.3F * -1 * Scale, 0.995F * Scale, 0.7F * Scale));
-				Path.AddArc(-2.4F * Scale, 2F * -1 * Scale, 4.8F * Scale, 4.8F * Scale, 180F, 360F);
-				Path.AddArc(-1.24925F * Scale, 0.84925F * -1 * Scale, 2.4985F * Scale, 2.4985F * Scale, 180F, 360F);
-				Path.AddArc(-1F * Scale, 0.6F * -1 * Scale, 2F * Scale, 2F * Scale, 180F, 360F);
+				Path.AddRectangle(new RectangleF(-4.395F * Scale * _pixelToMmMultiple, 3.195F * -1 * Scale * _pixelToMmMultiple, 8.79F * Scale * _pixelToMmMultiple, 7.19F * Scale * _pixelToMmMultiple));
+				Path.AddRectangle(new RectangleF(-0.8F * Scale * _pixelToMmMultiple, 3.995F * -1 * Scale * _pixelToMmMultiple, 1.6F * Scale * _pixelToMmMultiple, 0.8F * Scale * _pixelToMmMultiple));
+				Path.AddRectangle(new RectangleF(-4.395F * Scale * _pixelToMmMultiple, 1.195F * -1 * Scale * _pixelToMmMultiple, 0.995F * Scale * _pixelToMmMultiple, 3.2F * Scale * _pixelToMmMultiple));
+				Path.AddRectangle(new RectangleF(3.4F * Scale * _pixelToMmMultiple, 1.195F * -1 * Scale * _pixelToMmMultiple, 0.995F * Scale * _pixelToMmMultiple, 3.2F * Scale * _pixelToMmMultiple));
+				Path.AddRectangle(new RectangleF(3.4F * Scale * _pixelToMmMultiple, 0.3499999F * -1 * Scale * _pixelToMmMultiple, 0.095F * Scale * _pixelToMmMultiple, 1.5F * Scale * _pixelToMmMultiple));
+				Path.AddRectangle(new RectangleF(-3.52F * Scale * _pixelToMmMultiple, 0.3499999F * -1 * Scale * _pixelToMmMultiple, 0.12F * Scale * _pixelToMmMultiple, 1.5F * Scale * _pixelToMmMultiple));
+				Path.AddRectangle(new RectangleF(3.6F * Scale * _pixelToMmMultiple, 3.2F * -1 * Scale * _pixelToMmMultiple, 0.8F * Scale * _pixelToMmMultiple, 2F * Scale * _pixelToMmMultiple));
+				Path.AddRectangle(new RectangleF(3.6F * Scale * _pixelToMmMultiple, 3.2F * -1 * Scale * _pixelToMmMultiple, 0.8F * Scale * _pixelToMmMultiple, 2F * Scale * _pixelToMmMultiple));
+				Path.AddRectangle(new RectangleF(-4.4F * Scale * _pixelToMmMultiple, 3.2F * -1 * Scale * _pixelToMmMultiple, 0.8F * Scale * _pixelToMmMultiple, 2F * Scale * _pixelToMmMultiple));
+				Path.AddRectangle(new RectangleF(-4.4F * Scale * _pixelToMmMultiple, 3.2F * -1 * Scale * _pixelToMmMultiple, 0.8F * Scale * _pixelToMmMultiple, 2F * Scale * _pixelToMmMultiple));
+				Path.AddRectangle(new RectangleF(-4.4F * Scale * _pixelToMmMultiple, -2F * -1 * Scale * _pixelToMmMultiple, 0.8F * Scale * _pixelToMmMultiple, 2F * Scale * _pixelToMmMultiple));
+				Path.AddRectangle(new RectangleF(-4.4F * Scale * _pixelToMmMultiple, -2F * -1 * Scale * _pixelToMmMultiple, 0.8F * Scale * _pixelToMmMultiple, 2F * Scale * _pixelToMmMultiple));
+				Path.AddRectangle(new RectangleF(3.6F * Scale * _pixelToMmMultiple, -2F * -1 * Scale * _pixelToMmMultiple, 0.8F * Scale * _pixelToMmMultiple, 2F * Scale * _pixelToMmMultiple));
+				Path.AddRectangle(new RectangleF(3.6F * Scale * _pixelToMmMultiple, -2F * -1 * Scale * _pixelToMmMultiple, 0.8F * Scale * _pixelToMmMultiple, 2F * Scale * _pixelToMmMultiple));
+				Path.AddRectangle(new RectangleF(-4.4F * Scale * _pixelToMmMultiple, 1.2F * -1 * Scale * _pixelToMmMultiple, 0.995F * Scale * _pixelToMmMultiple, 0.7F * Scale * _pixelToMmMultiple));
+				Path.AddRectangle(new RectangleF(3.4F * Scale * _pixelToMmMultiple, 1.2F * -1 * Scale * _pixelToMmMultiple, 0.995F * Scale * _pixelToMmMultiple, 0.7F * Scale * _pixelToMmMultiple));
+				Path.AddRectangle(new RectangleF(-4.4F * Scale * _pixelToMmMultiple, -1.3F * -1 * Scale * _pixelToMmMultiple, 0.995F * Scale * _pixelToMmMultiple, 0.7F * Scale * _pixelToMmMultiple));
+				Path.AddRectangle(new RectangleF(3.4F * Scale * _pixelToMmMultiple, -1.3F * -1 * Scale * _pixelToMmMultiple, 0.995F * Scale * _pixelToMmMultiple, 0.7F * Scale * _pixelToMmMultiple));
+				Path.AddArc(-2.4F * Scale * _pixelToMmMultiple, 2F * -1 * Scale * _pixelToMmMultiple, 4.8F * Scale * _pixelToMmMultiple, 4.8F * Scale * _pixelToMmMultiple, 180F, 360F);
+				Path.AddArc(-1.24925F * Scale * _pixelToMmMultiple, 0.84925F * -1 * Scale * _pixelToMmMultiple, 2.4985F * Scale * _pixelToMmMultiple, 2.4985F * Scale * _pixelToMmMultiple, 180F, 360F);
+				Path.AddArc(-1F * Scale * _pixelToMmMultiple, 0.6F * -1 * Scale * _pixelToMmMultiple, 2F * Scale * _pixelToMmMultiple, 2F * Scale * _pixelToMmMultiple, 180F, 360F);
 				return true;
 			}
 			return false;
