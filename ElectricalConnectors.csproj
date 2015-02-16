@@ -101,6 +101,7 @@
     <Compile Include="Connectors\Nema_5_50P.cs" />
     <Compile Include="Connectors\Nema_6_50P.cs" />
     <Compile Include="Connectors\PowerSupplyVoltageSwitch.cs" />
+    <Compile Include="Connectors\RackMount19.cs" />
     <Compile Include="Connectors\RF_N_Plug.cs" />
     <Compile Include="Connectors\RF_SMA_Plug.cs" />
     <Compile Include="Connectors\RF_TNC_Plug.cs" />
@@ -281,6 +282,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\WireWrap.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RackMount19.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

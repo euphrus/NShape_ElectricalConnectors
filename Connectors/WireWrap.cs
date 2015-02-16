@@ -16,15 +16,15 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 		protected internal WireWrap(ShapeType shapeType, Template template)
 			: base(shapeType, template)
 		{
-			Width = 20F;
-			Height = 2F;
+			WidthF = 20F;
+			HeightF = 2F;
 		}
 
 		protected internal WireWrap(ShapeType shapeType, IStyleSet styleSet)
 			: base(shapeType, styleSet)
 		{
-			Width = 20F;
-			Height = 2F;
+			WidthF = 20F;
+			HeightF = 2F;
 		}
 
 		#endregion Constructors
@@ -42,7 +42,6 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 		{
 			if (base.CalculatePath())
 			{
-				Path.Reset();
 				Path.Reset();
 				Path.AddRectangle(new RectangleF(-10F * Scale * _pixelToMmMultiple, 1F * -1 * Scale * _pixelToMmMultiple, 20F * Scale * _pixelToMmMultiple, 2F * Scale * _pixelToMmMultiple));
 				Path.AddRectangle(new RectangleF(-9.215F * Scale * _pixelToMmMultiple, 0.325F * -1 * Scale * _pixelToMmMultiple, 0.65F * Scale * _pixelToMmMultiple, 0.65F * Scale * _pixelToMmMultiple));
@@ -77,8 +76,8 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 		protected override void InitializeToDefault(IStyleSet styleSet)
 		{
 			base.InitializeToDefault(styleSet);
-			Width = 20F;
-			Height = 2F;
+			WidthF = 20F;
+			HeightF = 2F;
 		}
 
 		#endregion Required Methods

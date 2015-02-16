@@ -16,15 +16,15 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 		protected internal MU(ShapeType shapeType, Template template)
 			: base(shapeType, template)
 		{
-			Width = 6.6F;
-			Height = 4.4F;
+			WidthF = 6.6F;
+			HeightF = 4.4F;
 		}
 
 		protected internal MU(ShapeType shapeType, IStyleSet styleSet)
 			: base(shapeType, styleSet)
 		{
-			Width = 6.6F;
-			Height = 4.4F;
+			WidthF = 6.6F;
+			HeightF = 4.4F;
 		}
 
 		#endregion Constructors
@@ -42,7 +42,6 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 		{
 			if (base.CalculatePath())
 			{
-				Path.Reset();
 				Path.Reset();
 				Path.AddPolygon(new PointF[]
 				{
@@ -97,8 +96,8 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 		protected override void InitializeToDefault(IStyleSet styleSet)
 		{
 			base.InitializeToDefault(styleSet);
-			Width = 6.6F;
-			Height = 4.4F;
+			WidthF = 6.6F;
+			HeightF = 4.4F;
 		}
 
 		#endregion Required Methods

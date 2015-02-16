@@ -16,15 +16,15 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 		protected internal Blade(ShapeType shapeType, Template template)
 			: base(shapeType, template)
 		{
-			Width = 4.5F;
-			Height = 19.5F;
+			WidthF = 4.5F;
+			HeightF = 19.5F;
 		}
 
 		protected internal Blade(ShapeType shapeType, IStyleSet styleSet)
 			: base(shapeType, styleSet)
 		{
-			Width = 4.5F;
-			Height = 19.5F;
+			WidthF = 4.5F;
+			HeightF = 19.5F;
 		}
 
 		#endregion Constructors
@@ -42,7 +42,6 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 		{
 			if (base.CalculatePath())
 			{
-				Path.Reset();
 				Path.Reset();
 				Path.StartFigure();
 				Path.AddLines(new PointF[]{new PointF(2F * Scale * _pixelToMmMultiple, -9.75F * -1 * Scale * _pixelToMmMultiple), new PointF(-2.25F * Scale * _pixelToMmMultiple, -9.75F * -1 * Scale * _pixelToMmMultiple), new PointF(-2.25F * Scale * _pixelToMmMultiple, -4.75F * -1 * Scale * _pixelToMmMultiple), new PointF(-0.85F * Scale * _pixelToMmMultiple, -3.75F * -1 * Scale * _pixelToMmMultiple), new PointF(-0.85F * Scale * _pixelToMmMultiple, 1.25F * -1 * Scale * _pixelToMmMultiple)});
@@ -67,8 +66,8 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 		protected override void InitializeToDefault(IStyleSet styleSet)
 		{
 			base.InitializeToDefault(styleSet);
-			Width = 4.5F;
-			Height = 19.5F;
+			WidthF = 4.5F;
+			HeightF = 19.5F;
 		}
 
 		#endregion Required Methods

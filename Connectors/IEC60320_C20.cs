@@ -16,15 +16,15 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 		protected internal IEC60320_C20(ShapeType shapeType, Template template)
 			: base(shapeType, template)
 		{
-			Width = 35.5F;
-			Height = 27.5F;
+			WidthF = 35.5F;
+			HeightF = 27.5F;
 		}
 
 		protected internal IEC60320_C20(ShapeType shapeType, IStyleSet styleSet)
 			: base(shapeType, styleSet)
 		{
-			Width = 35.5F;
-			Height = 27.5F;
+			WidthF = 35.5F;
+			HeightF = 27.5F;
 		}
 
 		#endregion Constructors
@@ -42,7 +42,6 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 		{
 			if (base.CalculatePath())
 			{
-				Path.Reset();
 				Path.Reset();
 				Path.AddRectangle(new RectangleF(-17.75F * Scale * _pixelToMmMultiple, 13.75F * -1 * Scale * _pixelToMmMultiple, 35.5F * Scale * _pixelToMmMultiple, 27.5F * Scale * _pixelToMmMultiple));
 				Path.AddLines(new PointF[]{new PointF(-14.5F * Scale * _pixelToMmMultiple, 3.5F * -1 * Scale * _pixelToMmMultiple), new PointF(-6.721826F * Scale * _pixelToMmMultiple, 10.5F * -1 * Scale * _pixelToMmMultiple), new PointF(6.721826F * Scale * _pixelToMmMultiple, 10.5F * -1 * Scale * _pixelToMmMultiple), new PointF(14.5F * Scale * _pixelToMmMultiple, 3.5F * -1 * Scale * _pixelToMmMultiple)});
@@ -71,8 +70,8 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 		protected override void InitializeToDefault(IStyleSet styleSet)
 		{
 			base.InitializeToDefault(styleSet);
-			Width = 35.5F;
-			Height = 27.5F;
+			WidthF = 35.5F;
+			HeightF = 27.5F;
 		}
 
 		#endregion Required Methods

@@ -16,15 +16,15 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 		protected internal IEC60320_C10(ShapeType shapeType, Template template)
 			: base(shapeType, template)
 		{
-			Width = 25.5F;
-			Height = 17.5F;
+			WidthF = 25.5F;
+			HeightF = 17.5F;
 		}
 
 		protected internal IEC60320_C10(ShapeType shapeType, IStyleSet styleSet)
 			: base(shapeType, styleSet)
 		{
-			Width = 25.5F;
-			Height = 17.5F;
+			WidthF = 25.5F;
+			HeightF = 17.5F;
 		}
 
 		#endregion Constructors
@@ -42,7 +42,6 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 		{
 			if (base.CalculatePath())
 			{
-				Path.Reset();
 				Path.Reset();
 				Path.AddArc(-12.75F * Scale * _pixelToMmMultiple, 8.75F * -1 * Scale * _pixelToMmMultiple, 2.5F * Scale * _pixelToMmMultiple, 2.5F * Scale * _pixelToMmMultiple, 180F, 90F);
 				Path.AddArc(10.25F * Scale * _pixelToMmMultiple, 8.75F * -1 * Scale * _pixelToMmMultiple, 2.5F * Scale * _pixelToMmMultiple, 2.5F * Scale * _pixelToMmMultiple, 270F, 90F);
@@ -98,8 +97,8 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 		protected override void InitializeToDefault(IStyleSet styleSet)
 		{
 			base.InitializeToDefault(styleSet);
-			Width = 25.5F;
-			Height = 17.5F;
+			WidthF = 25.5F;
+			HeightF = 17.5F;
 		}
 
 		#endregion Required Methods

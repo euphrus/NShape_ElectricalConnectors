@@ -16,15 +16,15 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 		protected internal EarthGround(ShapeType shapeType, Template template)
 			: base(shapeType, template)
 		{
-			Width = 10F;
-			Height = 60F;
+			WidthF = 10F;
+			HeightF = 60F;
 		}
 
 		protected internal EarthGround(ShapeType shapeType, IStyleSet styleSet)
 			: base(shapeType, styleSet)
 		{
-			Width = 10F;
-			Height = 60F;
+			WidthF = 10F;
+			HeightF = 60F;
 		}
 
 		#endregion Constructors
@@ -43,7 +43,6 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 			if (base.CalculatePath())
 			{
 				Path.Reset();
-				Path.Reset();
 				Path.AddRectangle(new RectangleF(-5F * Scale * _pixelToMmMultiple, 30F * -1 * Scale * _pixelToMmMultiple, 10F * Scale * _pixelToMmMultiple, 60F * Scale * _pixelToMmMultiple));
 				return true;
 			}
@@ -61,8 +60,8 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 		protected override void InitializeToDefault(IStyleSet styleSet)
 		{
 			base.InitializeToDefault(styleSet);
-			Width = 10F;
-			Height = 60F;
+			WidthF = 10F;
+			HeightF = 60F;
 		}
 
 		#endregion Required Methods

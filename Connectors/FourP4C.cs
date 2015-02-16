@@ -16,15 +16,15 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 		protected internal FourP4C(ShapeType shapeType, Template template)
 			: base(shapeType, template)
 		{
-			Width = 7.62F;
-			Height = 9.37F;
+			WidthF = 7.62F;
+			HeightF = 9.37F;
 		}
 
 		protected internal FourP4C(ShapeType shapeType, IStyleSet styleSet)
 			: base(shapeType, styleSet)
 		{
-			Width = 7.62F;
-			Height = 9.37F;
+			WidthF = 7.62F;
+			HeightF = 9.37F;
 		}
 
 		#endregion Constructors
@@ -42,7 +42,6 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 		{
 			if (base.CalculatePath())
 			{
-				Path.Reset();
 				Path.Reset();
 				Path.StartFigure();
 				Path.AddArc(-3.81F * Scale * _pixelToMmMultiple, -4.18F * -1 * Scale * _pixelToMmMultiple, 0.5F * Scale * _pixelToMmMultiple, 0.5F * Scale * _pixelToMmMultiple, 90F, 90F);
@@ -77,8 +76,8 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 		protected override void InitializeToDefault(IStyleSet styleSet)
 		{
 			base.InitializeToDefault(styleSet);
-			Width = 7.62F;
-			Height = 9.37F;
+			WidthF = 7.62F;
+			HeightF = 9.37F;
 		}
 
 		#endregion Required Methods

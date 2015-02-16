@@ -16,15 +16,15 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 		protected internal Nema_1_15P(ShapeType shapeType, Template template)
 			: base(shapeType, template)
 		{
-			Width = 30F;
-			Height = 30F;
+			WidthF = 30F;
+			HeightF = 30F;
 		}
 
 		protected internal Nema_1_15P(ShapeType shapeType, IStyleSet styleSet)
 			: base(shapeType, styleSet)
 		{
-			Width = 30F;
-			Height = 30F;
+			WidthF = 30F;
+			HeightF = 30F;
 		}
 
 		#endregion Constructors
@@ -42,7 +42,6 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 		{
 			if (base.CalculatePath())
 			{
-				Path.Reset();
 				Path.Reset();
 				Path.AddArc(-15F * Scale * _pixelToMmMultiple, 15F * -1 * Scale * _pixelToMmMultiple, 30F * Scale * _pixelToMmMultiple, 30F * Scale * _pixelToMmMultiple, 180F, 360F);
 				Path.AddRectangle(new RectangleF(-7.874F * Scale * _pixelToMmMultiple, 3.302F * -1 * Scale * _pixelToMmMultiple, 1.524F * Scale * _pixelToMmMultiple, 6.604F * Scale * _pixelToMmMultiple));
@@ -63,8 +62,8 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 		protected override void InitializeToDefault(IStyleSet styleSet)
 		{
 			base.InitializeToDefault(styleSet);
-			Width = 30F;
-			Height = 30F;
+			WidthF = 30F;
+			HeightF = 30F;
 		}
 
 		#endregion Required Methods

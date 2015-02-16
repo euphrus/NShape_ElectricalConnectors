@@ -12,8 +12,8 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 
 		#region Fields
 
-		private float _width;
-		private float _height;
+		private float _widthF;
+		private float _heightF;
 		protected const float _pixelToMmMultiple = 3.779528F;
 
 		#endregion Fields
@@ -23,17 +23,11 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 		protected internal RectangleFBase(ShapeType shapeType, Template template)
 			: base(shapeType, template)
 		{
-			Scale = 1F;
-			Width = 10F;
-			Height = 10F;
 		}
 
 		protected internal RectangleFBase(ShapeType shapeType, IStyleSet styleSet)
 			: base(shapeType, styleSet)
 		{
-			Scale = 1F;
-			Width = 10F;
-			Height = 10F;
 		}
 
 		#endregion Constructors
@@ -43,8 +37,8 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 		protected override void InitializeToDefault(IStyleSet styleSet)
 		{
 			base.InitializeToDefault(styleSet);
-			Width = 10F;
-			Height = 10F;
+			WidthF = 10F;
+			HeightF = 10F;
 		}
 
 		#endregion Required Methods
@@ -52,30 +46,68 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 		#region Properties
 
 		[Browsable(false)]
-		public new float Width
+		public float WidthF
 		{
 			get
 			{
-				return _width * Scale * _pixelToMmMultiple;
+				return _widthF;
 			}
 			set
 			{
-				_width = value;
-				base.Width = (int)Math.Ceiling(_width * Scale * _pixelToMmMultiple);
+				if (value < 0)
+				{
+					throw new ArgumentException("Value must be greater than zero", "Width");
+				}
+				if (_widthF != value)
+				{
+					_widthF = value;
+					Width = (int)Math.Ceiling(_widthF * _pixelToMmMultiple * Scale);
+				}
+			}
+		}
+
+		private new int Width
+		{
+			get
+			{
+				return base.Width;
+			}
+			set
+			{
+				base.Width = value;
 			}
 		}
 
 		[Browsable(false)]
-		public new float Height
+		public float HeightF
 		{
 			get
 			{
-				return _height * Scale * _pixelToMmMultiple;
+				return _heightF * Scale * _pixelToMmMultiple;
 			}
 			set
 			{
-				_height = value;
-				base.Height = (int)Math.Ceiling(_height * Scale * _pixelToMmMultiple);
+				if (value < 0)
+				{
+					throw new ArgumentException("Value must be greater than zero", "Height");
+				}
+				if (_heightF != value)
+				{
+					_heightF = value;
+					Height = (int)Math.Ceiling(_heightF * _pixelToMmMultiple * Scale);
+				}
+			}
+		}
+
+		private new int Height
+		{
+			get
+			{
+				return base.Height;
+			}
+			set
+			{
+				base.Height = value;
 			}
 		}
 
@@ -86,6 +118,10 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 		{
 			get
 			{
+				if (_scale <= 0)
+				{
+					_scale = 1F;
+				}
 				return _scale;
 			}
 			set
@@ -93,8 +129,8 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 				if (value > 0)
 				{
 					_scale = value;
-					base.Width = (int)Math.Ceiling(_width * Scale * _pixelToMmMultiple);
-					base.Height = (int)Math.Ceiling(_height * Scale * _pixelToMmMultiple);
+					base.Width = (int)Math.Ceiling(_widthF * Scale * _pixelToMmMultiple);
+					base.Height = (int)Math.Ceiling(_heightF * Scale * _pixelToMmMultiple);
 				}
 			}
 		}

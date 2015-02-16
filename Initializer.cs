@@ -56,6 +56,7 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
             registrar.RegisterShapeType(T568A.GetShapeType());
             registrar.RegisterShapeType(T568B.GetShapeType());
             registrar.RegisterShapeType(WireWrap.GetShapeType());
+            registrar.RegisterShapeType(RackMount19.GetShapeType());
         }
 
         private const string libraryName = "ElectricalConnectors";

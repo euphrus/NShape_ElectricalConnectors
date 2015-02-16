@@ -16,15 +16,15 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 		protected internal Lug(ShapeType shapeType, Template template)
 			: base(shapeType, template)
 		{
-			Width = 30F;
-			Height = 87F;
+			WidthF = 30F;
+			HeightF = 87F;
 		}
 
 		protected internal Lug(ShapeType shapeType, IStyleSet styleSet)
 			: base(shapeType, styleSet)
 		{
-			Width = 30F;
-			Height = 87F;
+			WidthF = 30F;
+			HeightF = 87F;
 		}
 
 		#endregion Constructors
@@ -42,7 +42,6 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 		{
 			if (base.CalculatePath())
 			{
-				Path.Reset();
 				Path.Reset();
 				Path.AddLines(new PointF[]{new PointF(-10F * Scale * _pixelToMmMultiple, -43.5F * -1 * Scale * _pixelToMmMultiple), new PointF(-10F * Scale * _pixelToMmMultiple, 0.5F * -1 * Scale * _pixelToMmMultiple), new PointF(-10F * Scale * _pixelToMmMultiple, 15F * -1 * Scale * _pixelToMmMultiple)});
 				Path.AddArc(-15F * Scale * _pixelToMmMultiple, 43.5F * -1 * Scale * _pixelToMmMultiple, 30F * Scale * _pixelToMmMultiple, 30F * Scale * _pixelToMmMultiple, 131.9F, 276.4F);
@@ -65,8 +64,8 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 		protected override void InitializeToDefault(IStyleSet styleSet)
 		{
 			base.InitializeToDefault(styleSet);
-			Width = 30F;
-			Height = 87F;
+			WidthF = 30F;
+			HeightF = 87F;
 		}
 
 		#endregion Required Methods

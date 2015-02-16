@@ -16,15 +16,15 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 		protected internal PowerSupplyVoltageSwitch(ShapeType shapeType, Template template)
 			: base(shapeType, template)
 		{
-			Width = 7F;
-			Height = 12F;
+			WidthF = 7F;
+			HeightF = 12F;
 		}
 
 		protected internal PowerSupplyVoltageSwitch(ShapeType shapeType, IStyleSet styleSet)
 			: base(shapeType, styleSet)
 		{
-			Width = 7F;
-			Height = 12F;
+			WidthF = 7F;
+			HeightF = 12F;
 		}
 
 		#endregion Constructors
@@ -42,7 +42,6 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 		{
 			if (base.CalculatePath())
 			{
-				Path.Reset();
 				Path.Reset();
 				Path.AddRectangle(new RectangleF(-3.5F * Scale * _pixelToMmMultiple, 6F * -1 * Scale * _pixelToMmMultiple, 7F * Scale * _pixelToMmMultiple, 12F * Scale * _pixelToMmMultiple));
 				Path.AddRectangle(new RectangleF(-2.5F * Scale * _pixelToMmMultiple, 5F * -1 * Scale * _pixelToMmMultiple, 5F * Scale * _pixelToMmMultiple, 10F * Scale * _pixelToMmMultiple));
@@ -84,8 +83,8 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 		protected override void InitializeToDefault(IStyleSet styleSet)
 		{
 			base.InitializeToDefault(styleSet);
-			Width = 7F;
-			Height = 12F;
+			WidthF = 7F;
+			HeightF = 12F;
 		}
 
 		#endregion Required Methods

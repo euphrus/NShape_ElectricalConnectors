@@ -16,15 +16,15 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 		protected internal MiniBNC(ShapeType shapeType, Template template)
 			: base(shapeType, template)
 		{
-			Width = 8.54F;
-			Height = 7.54F;
+			WidthF = 8.54F;
+			HeightF = 7.54F;
 		}
 
 		protected internal MiniBNC(ShapeType shapeType, IStyleSet styleSet)
 			: base(shapeType, styleSet)
 		{
-			Width = 8.54F;
-			Height = 7.54F;
+			WidthF = 8.54F;
+			HeightF = 7.54F;
 		}
 
 		#endregion Constructors
@@ -42,7 +42,6 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 		{
 			if (base.CalculatePath())
 			{
-				Path.Reset();
 				Path.Reset();
 				Path.AddPolygon(new PointF[]
 				{
@@ -77,8 +76,8 @@ namespace Windstream.Shapes.NShape.Electrical.Connectors
 		protected override void InitializeToDefault(IStyleSet styleSet)
 		{
 			base.InitializeToDefault(styleSet);
-			Width = 8.54F;
-			Height = 7.54F;
+			WidthF = 8.54F;
+			HeightF = 7.54F;
 		}
 
 		#endregion Required Methods
