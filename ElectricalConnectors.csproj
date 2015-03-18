@@ -7,8 +7,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{273444D5-0DCF-40EA-B8AC-D167D37C9D7C}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Windstream.Shapes.NShape.Electrical.Connectors</RootNamespace>
-    <AssemblyName>Windstream.Shapes.NShape.Electrical.Connectors</AssemblyName>
+    <RootNamespace>Windstream.NShape.Ports</RootNamespace>
+    <AssemblyName>Windstream.NShape.Ports</AssemblyName>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <UpgradeBackupLocation>
@@ -63,56 +63,6 @@
     <Reference Include="System.Drawing" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connectors\Blade.cs" />
-    <Compile Include="Connectors\BNC.cs" />
-    <Compile Include="Connectors\EarthGround.cs" />
-    <Compile Include="Connectors\FC.cs" />
-    <Compile Include="Connectors\FourP4C.cs" />
-    <Compile Include="Connectors\IEC60320_C01.cs" />
-    <Compile Include="Connectors\IEC60320_C02.cs" />
-    <Compile Include="Connectors\IEC60320_C05.cs" />
-    <Compile Include="Connectors\IEC60320_C06.cs" />
-    <Compile Include="Connectors\IEC60320_C07.cs" />
-    <Compile Include="Connectors\IEC60320_C08.cs" />
-    <Compile Include="Connectors\IEC60320_C09.cs" />
-    <Compile Include="Connectors\IEC60320_C10.cs" />
-    <Compile Include="Connectors\IEC60320_C13.cs" />
-    <Compile Include="Connectors\IEC60320_C14.cs" />
-    <Compile Include="Connectors\IEC60320_C15.cs" />
-    <Compile Include="Connectors\IEC60320_C16.cs" />
-    <Compile Include="Connectors\IEC60320_C17.cs" />
-    <Compile Include="Connectors\IEC60320_C18.cs" />
-    <Compile Include="Connectors\IEC60320_C19.cs" />
-    <Compile Include="Connectors\IEC60320_C20.cs" />
-    <Compile Include="Connectors\IEC60320_C21.cs" />
-    <Compile Include="Connectors\IEC60320_C22.cs" />
-    <Compile Include="Connectors\IEC60320_C23.cs" />
-    <Compile Include="Connectors\IEC60320_C24.cs" />
-    <Compile Include="Connectors\Jumper.cs" />
-    <Compile Include="Connectors\LC.cs" />
-    <Compile Include="Connectors\Lug.cs" />
-    <Compile Include="Connectors\MiniBNC.cs" />
-    <Compile Include="Connectors\MU.cs" />
-    <Compile Include="Connectors\Nema_1_15P.cs" />
-    <Compile Include="Connectors\Nema_1_20P.cs" />
-    <Compile Include="Connectors\Nema_5_15P.cs" />
-    <Compile Include="Connectors\Nema_5_20P.cs" />
-    <Compile Include="Connectors\Nema_5_30P.cs" />
-    <Compile Include="Connectors\Nema_5_50P.cs" />
-    <Compile Include="Connectors\Nema_6_50P.cs" />
-    <Compile Include="Connectors\PowerSupplyVoltageSwitch.cs" />
-    <Compile Include="Connectors\RackMount19.cs" />
-    <Compile Include="Connectors\RF_N_Plug.cs" />
-    <Compile Include="Connectors\RF_SMA_Plug.cs" />
-    <Compile Include="Connectors\RF_TNC_Plug.cs" />
-    <Compile Include="Connectors\Ring.cs" />
-    <Compile Include="Connectors\RJ21.cs" />
-    <Compile Include="Connectors\SC.cs" />
-    <Compile Include="Connectors\T568A.cs" />
-    <Compile Include="Connectors\T568B.cs" />
-    <Compile Include="Connectors\WireWrap.cs" />
-    <Compile Include="Connectors\EightP8C.cs" />
-    <Compile Include="Connectors\RectangleFBase.cs" />
     <Compile Include="Initializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -120,6 +70,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Shapes\Bracket.cs" />
+    <Compile Include="Shapes\Coax.cs" />
+    <Compile Include="Shapes\Ethernet.cs" />
+    <Compile Include="Shapes\Optic.cs" />
+    <Compile Include="Shapes\Power.cs" />
+    <Compile Include="Shapes\RectangleFBase.cs" />
+    <Compile Include="Shapes\Undefined.cs" />
+    <Compile Include="Shapes\Wire.cs" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
@@ -138,153 +96,25 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="GDI\Bracket.gdi" />
+    <None Include="GDI\Coax.gdi" />
+    <None Include="GDI\Ethernet.gdi" />
+    <None Include="GDI\Optic.gdi" />
+    <None Include="GDI\Power.gdi" />
+    <None Include="GDI\Undefined.gdi" />
+    <None Include="GDI\Wire.gdi" />
     <None Include="LICENSE" />
     <None Include="README.md" />
-    <None Include="Resources\EightP8C.bmp" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <None Include="Resources\Blade.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\BNC.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\EarthGround.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\FC.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\FourP4C.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IEC60320_C01.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IEC60320_C02.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IEC60320_C05.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IEC60320_C06.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IEC60320_C07.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IEC60320_C08.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IEC60320_C09.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IEC60320_C10.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IEC60320_C13.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IEC60320_C14.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IEC60320_C15.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IEC60320_C16.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IEC60320_C17.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IEC60320_C18.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IEC60320_C19.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IEC60320_C20.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IEC60320_C21.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IEC60320_C22.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IEC60320_C23.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IEC60320_C24.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Jumper.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\LC.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Lug.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MiniBNC.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MU.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Nema_1_15P.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Nema_1_20P.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Nema_5_15P.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Nema_5_20P.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Nema_5_30P.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Nema_5_50P.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Nema_6_50P.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\PowerSupplyVoltageSwitch.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\RF_N_Plug.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\RF_SMA_Plug.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\RF_TNC_Plug.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Ring.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\RJ21.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SC.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\T568A.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\T568B.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\WireWrap.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\RackMount19.bmp" />
+    <Content Include="Resources\Bracket.bmp" />
+    <Content Include="Resources\Coax.bmp" />
+    <Content Include="Resources\Ethernet.bmp" />
+    <Content Include="Resources\Optic.bmp" />
+    <Content Include="Resources\Power.bmp" />
+    <Content Include="Resources\Undefined.bmp" />
+    <Content Include="Resources\Wire.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

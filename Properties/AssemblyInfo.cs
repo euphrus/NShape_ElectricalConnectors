@@ -18,10 +18,10 @@ using System.Runtime.InteropServices;
 // General Information about an library is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an library.
-[assembly: AssemblyTitle("NShape Electrical Connector Shapes")]
+[assembly: AssemblyTitle("NShape Ports")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyProduct("NShape Electrical Connector Shapes")]
+[assembly: AssemblyProduct("NShape Ports")]
 [assembly: AssemblyTrademark("")]
 
 // Setting ComVisible to false makes the types in this library not visible 
@@ -33,3 +33,4 @@ using System.Runtime.InteropServices;
 [assembly: Guid("BFBADC38-7C84-42FA-A388-B02FA45BA32A")]
 [assembly: AssemblyCompanyAttribute("Windstream")]
 [assembly: AssemblyVersionAttribute("1.0.0.*")]
+[assembly: AssemblyCopyrightAttribute("Windstream")]
